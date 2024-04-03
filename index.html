@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory Map (Customizable Size)</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Inventory Map</h1>
+    <div></div>
+
+    <div id="item-creation-box">
+      <label for="item-name">Item Name:</label>
+      <input type="text" id="item-name" placeholder="Enter item name" />
+      <button onclick="createItem()">Create Item</button>
+    </div>
+
+    <div id="map-size-container">
+      <label for="map-width">Map Width (px):</label>
+      <input type="number" id="map-width" value="500" />
+      <label for="map-height">Map Height (px):</label>
+      <input type="number" id="map-height" value="300" />
+      <button onclick="updateMapSize()">Set Map Size</button>
+    </div>
+    <div id="map-controls">
+      <button>Add Row</button>
+      <button>Add Column</button>
+    </div>
+    <div id="inventory-map">
+      <div id="item-container"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="item.js"></script>
+    <script src="Map.js"></script>
+  </body>
+</html>

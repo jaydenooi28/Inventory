@@ -1,0 +1,17 @@
+#inventory-map {
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 20px;
+    display: grid;
+
+  }
+  
+  .inventory-item {
+    width: auto !important;  
+    height: 50px;
+    border: 1px solid blue;
+    text-align: center;
+    padding: 5px;  /* Add padding for spacing within the item */
+   
+  }
